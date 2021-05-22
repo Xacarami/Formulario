@@ -23,6 +23,30 @@
             padding-right: 30%;
         }
 
+                                    /* NOME E SOBRENOME */
+
+        .nome{
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+
+        }
+
+        #sobrenome1{
+            margin-left: 20px;
+            color: blueviolet;
+        }
+
+                                    /* EMAIL */
+
+        .email{
+            margin-top: 10px;
+            border-radius: 6px;
+            color: blueviolet;
+        }
+
+        /* TÍTULO E SUBTÍTULO */
+
         h1,p{
             color: blueviolet;
             position: relative;
@@ -33,15 +57,7 @@
             font-size: 1.2em;
         }
 
-        #sobrenome1{
-            margin-left: 20px;
-        }
-
-        .nome{
-            display: flex;
-            position: relative;
-            align-items: flex-start;
-        }
+                                /* NOME E SOBRE NOME */
 
         .nomes input{
             position: relative;
@@ -49,8 +65,8 @@
             padding-top: 0.5em;
             padding-right: 1em;
             border-radius: 6px;
-            padding: 0.5em 0.5em;
-            border: 1px solid black;
+            padding: 0.4em 0.5em;
+            border: 1px solid blueviolet;
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 
         }
@@ -60,16 +76,18 @@
             position:relative;
             font-family: sans-serif;
             font-weight: bold;
-
+            color: blueviolet;
         }
+
+                                        /*EMAIL*/
 
         .email input{
             position: relative;
             display: flex;
-            padding: 0.5em 0.5em;
+            padding: 0.4em 0.5em;
             font-weight: bold;
             border-radius: 6px;
-            border: 1px solid black;
+            border: 1px solid blueviolet;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 
 
@@ -82,10 +100,7 @@
             position:relative;
         }
 
-        .email{
-            margin-top: 10px;
-            border-radius: 6px;
-        }
+                                    /* BOTAO SUBMIT */
 
         .button{
             background-color: blueviolet;
@@ -101,6 +116,30 @@
             margin: 0% 44%;
             border-radius: 5px;
         }
+        
+                                    /* aplicação em rádio */
+
+        .app{
+            padding-left: 35%;
+            font-size: 1em;
+            position: relative;
+            margin-top: 25px;
+        }
+
+
+        .app label{
+
+            display: flex;
+            color: blueviolet;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .app input{
+            width: 1.1em;
+            height: 1.1em;
+            margin-right: 7px;
+        }
+
 
     </style>
 
@@ -124,6 +163,29 @@
 
     </form>
 
+
+        <div class="app">
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="apl">
+                <span>FrontEnd</span>
+            </label>
+            <label>
+            <input type="radio" name="apl"> Back-end
+            <span class="checkmark"></span>
+            </label>
+            <label>
+            <input type="radio" name="apl"> Fullstack
+            <span class="checkmark"></span>
+            </label>
+
+        </div>
+
+
+
+
+
+        
     <div class="botao">
         <input type="button" class="button" value="Concluir">
     </div>
